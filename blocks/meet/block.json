@@ -1,0 +1,13 @@
+{
+  "name": "acf/meet",
+  "title": "Meet",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["meet", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "meet.php"
+  },
+  "align": "full"
+}

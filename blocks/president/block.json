@@ -1,0 +1,13 @@
+{
+  "name": "acf/president",
+  "title": "President",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["president", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "president.php"
+  },
+  "align": "full"
+}

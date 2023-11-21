@@ -1,0 +1,13 @@
+{
+  "name": "acf/contact",
+  "title": "Contact",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["contact", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "contact.php"
+  },
+  "align": "full"
+}

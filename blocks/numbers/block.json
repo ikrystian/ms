@@ -1,0 +1,13 @@
+{
+  "name": "acf/numbers",
+  "title": "Numbers",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["numbers", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "numbers.php"
+  },
+  "align": "full"
+}

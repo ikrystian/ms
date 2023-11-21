@@ -1,0 +1,13 @@
+{
+  "name": "acf/success",
+  "title": "Success",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["success", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "success.php"
+  },
+  "align": "full"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "acf/positions",
+  "title": "Positions",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["positions", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "positions.php"
+  },
+  "align": "full"
+}

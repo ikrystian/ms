@@ -1,0 +1,13 @@
+{
+  "name": "acf/logos",
+  "title": "Logos",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["logos", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "logos.php"
+  },
+  "align": "full"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "acf/services",
+  "title": "Services",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["services", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "services.php"
+  },
+  "align": "full"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "acf/development",
+  "title": "Development",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["development", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "development.php"
+  },
+  "align": "full"
+}

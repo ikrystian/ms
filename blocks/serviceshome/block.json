@@ -1,0 +1,13 @@
+{
+  "name": "acf/serviceshome",
+  "title": "Home services",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["serviceshome", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "serviceshome.php"
+  },
+  "align": "full"
+}

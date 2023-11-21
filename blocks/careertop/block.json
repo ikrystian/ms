@@ -1,0 +1,13 @@
+{
+  "name": "acf/careertop",
+  "title": "Career top",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["careertop", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "careertop.php"
+  },
+  "align": "full"
+}

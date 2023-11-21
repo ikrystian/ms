@@ -1,0 +1,13 @@
+{
+  "name": "acf/work",
+  "title": "Work",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["work", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "work.php"
+  },
+  "align": "full"
+}
