@@ -131,15 +131,15 @@ a {
 	text-decoration: none;
 }
 
-.main-navigation .submenu {
+.main-navigation .menu-item-has-children {
 	position: relative;
 }
 
-.main-navigation .submenu:hover ul {
+.main-navigation .menu-item-has-children:hover ul {
 	display: block;
 }
 
-.main-navigation .submenu ul {
+.main-navigation .menu-item-has-children ul {
 	position: absolute;
 	top: 100%;
 	list-style: none;
@@ -149,7 +149,7 @@ a {
 	padding-block: 1.6rem;
 }
 
-.main-navigation .submenu ul li a {
+.main-navigation .menu-item-has-children ul li a {
 	padding: 0.8rem 1.6rem;
 	min-width: 120px;
 	text-decoration: none;
@@ -158,7 +158,7 @@ a {
 	white-space: nowrap;
 }
 
-.main-navigation .submenu ul li a:hover {
+.main-navigation .menu-item-has-children ul li a:hover {
 	background-color: #d7d7d7;
 }
 
@@ -210,7 +210,7 @@ a {
 	text-decoration: underline;
 }
 
-.main-navigation .search-icon {
+.main-navigation .search-icon a {
 	width: 3.2rem;
 	height: 3.2rem;
 	display: flex;
@@ -221,7 +221,19 @@ a {
 	border-radius: 50%;
 }
 
-.button-icon {
+.main-navigation .search-icon a svg path {
+	transition: fill 0.2s ease;
+}
+
+.main-navigation .search-icon a:hover {
+	background-color: #04102f;
+}
+
+.main-navigation .search-icon a:hover svg path {
+	fill: #fff;
+}
+
+.button-icon a {
 	width: 2.8rem;
 	height: 2.8rem;
 	display: flex;
@@ -233,19 +245,19 @@ a {
 	transition: background-color 0.2s ease;
 }
 
-.button-icon svg {
+.button-icon a svg {
 	opacity: 80%;
 }
 
-.button-icon svg path {
+.button-icon a svg path {
 	transition: fill 0.2s ease;
 }
 
-.button-icon:hover {
+.button-icon a:hover {
 	background-color: #04102f;
 }
 
-.button-icon:hover svg path {
+.button-icon a:hover svg path {
 	fill: #fff;
 }
 
@@ -1884,18 +1896,18 @@ img {
 	}
 }
 
-.about-us-boxes__header {
+.about-us-boxes__description > div p:first-child {
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	margin-bottom: 5rem !important;
 }
 
-.about-us-boxes__middle {
+.about-us-boxes__description > div p:nth-child(2) {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
 
-.about-us-boxes__arrow {
+.about-us-boxes__description img {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
@@ -3084,6 +3096,10 @@ ul.lang {
 	text-align: center;
 	align-items: center;
 	padding-block: 12rem;
+}
+
+.wpml-ls-current-language a span {
+	text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

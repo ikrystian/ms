@@ -1,0 +1,13 @@
+{
+  "name": "acf/header-home",
+  "title": "Header home",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["header-home"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "header-home.php"
+  },
+  "align": "full"
+}

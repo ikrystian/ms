@@ -13,11 +13,7 @@ $subtitle = get_field('subtitle');
         </svg>
 
         <div class="work__description">
-            <p><strong>Sprawdź aktualne oferty
-                    pracy</strong></p>
-            <p>
-                Poznaj nas i dołącz do naszego zespołu. Czeka na Ciebie wiele ciekawych ofert pracy.
-            </p>
+            <?php the_field('description'); ?>
         </div>
     </div>
     <div class="work__subtitle">

@@ -193,6 +193,7 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/blocks/services');
     register_block_type(__DIR__ . '/blocks/aboutusboxes');
     register_block_type(__DIR__ . '/blocks/logos');
+    register_block_type(__DIR__ . '/blocks/header-home');
 }
 
 add_action( 'init', 'register_acf_blocks' );
@@ -202,3 +203,20 @@ function cc_mime_types($mimes) {
     return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+function override_mce_options($initArray) {
+    $opts = '*[*]';
+    $initArray['valid_elements'] = $opts;
+    $initArray['extended_valid_elements'] = $opts;
+    return $initArray;
+} add_filter('tiny_mce_before_init', 'override_mce_options');
+
+function add_file_types_to_uploads($file_types){
+
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg';
+    $file_types = array_merge($file_types, $new_filetypes );
+
+    return $file_types;
+}
+add_action('upload_mimes', 'add_file_types_to_uploads');
