@@ -1415,6 +1415,7 @@ a {
 	display: block;
 	letter-spacing: 1px;
 	margin-bottom: 3rem;
+	font-style: normal;
 }
 
 .position__description a {
@@ -1422,6 +1423,7 @@ a {
 	color: #fff;
 	padding: 0.8rem 1.6rem;
 	text-decoration: none;
+	font-style: normal;
 	text-transform: uppercase;
 }
 
@@ -1514,7 +1516,7 @@ img {
 	height: auto;
 }
 
-.development__title {
+.development h2 {
 	font-size: 3.6rem;
 	margin-bottom: 2rem;
 }
@@ -1546,7 +1548,7 @@ img {
 	flex-direction: column;
 	gap: 3.6rem;
 	text-align: center;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1554,7 +1556,7 @@ img {
 		flex-direction: row;
 		justify-content: center;
 		padding-block: 8rem;
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 }
 
@@ -1797,7 +1799,6 @@ img {
 }
 
 .services-list h2 {
-	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 2.4rem;
 }
@@ -2001,7 +2002,7 @@ img {
 
 .about-us-top {
 	height: 50vh;
-	background: #ececf1 url("./img/about-us-top.jpg") top right no-repeat;
+	background: #dbdce3 url("./img/about-us-top.jpg") top right no-repeat;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -2113,11 +2114,15 @@ img {
 .mobile-navigation {
 	position: fixed;
 	inset: 0;
-	z-index: 1000;
-	background-color: #362a6a;
+	z-index: 1000000;
+	background-color: rgba(54, 42, 106, 0.9);
 	display: none;
 	place-items: center;
 	padding: 1rem;
+}
+
+.mobile-navigation .button-icon, .mobile-navigation .search-button, .mobile-navigation .sub-menu {
+	display: none !important;
 }
 
 .mobile-navigation ul {
@@ -2174,7 +2179,7 @@ img {
 	opacity: 0.4;
 }
 
-.career-top__list-wrapper {
+.career-top span + div {
 	position: relative;
 }
 

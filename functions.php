@@ -50,6 +50,7 @@ function ms_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'ms' ),
+            'menu-2' => esc_html__( 'Footer', 'ms' ),
 		)
 	);
 
@@ -194,6 +195,7 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/blocks/aboutusboxes');
     register_block_type(__DIR__ . '/blocks/logos');
     register_block_type(__DIR__ . '/blocks/header-home');
+    register_block_type(__DIR__ . '/blocks/check-our-offers');
 }
 
 add_action( 'init', 'register_acf_blocks' );
@@ -220,3 +222,9 @@ function add_file_types_to_uploads($file_types){
     return $file_types;
 }
 add_action('upload_mimes', 'add_file_types_to_uploads');
+
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
+}
+
+do_action( 'wpml_multilingual_options', $wp_option_name );

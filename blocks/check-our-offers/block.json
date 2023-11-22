@@ -1,0 +1,13 @@
+{
+  "name": "acf/check-our-offers",
+  "title": "Check our offers",
+  "description": "",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["check-our-offers"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "check-our-offers.php"
+  },
+  "align": "full"
+}

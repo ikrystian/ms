@@ -23,8 +23,8 @@
     });
 
 
-        const moreButton = document.querySelector('.about-us-boxes__more-button');
-        if(moreButton) {
+    const moreButton = document.querySelector('.about-us-boxes__more-button');
+    if (moreButton) {
         const moreBoxes = document.querySelector('.about-us-more-boxes');
         moreButton.addEventListener('click', () => {
             moreBoxes.classList.toggle('active');
@@ -39,7 +39,7 @@
             const gallery = button.parentElement.querySelector('.gallery');
             gallery.classList.add('active');
         })
-    
+
     })
 
     const closeGalleryButton = document.querySelectorAll('.close-gallery');
@@ -49,7 +49,85 @@
         })
 
     })
-	
+
+    const dropDown = document.querySelector('select[name="menu-126"]');
+
+    function changeFormEmail() {
+        const subject = dropDown.value;
+        let email;
+        switch (subject) {
+            case 'Zapytanie ofertowe':
+                email = 'zapytanie@msservices.pl';
+                break;
+            case 'Dla dostawców':
+                email = 'biuro@msservices.pl';
+                break;
+            case 'Dla Pracowników':
+                email = 'kadry@msservices.pl';
+                break;
+            case 'Rekrutacja':
+                email = 'hr@msservices.pl';
+                break;
+            case 'RODO':
+                email = 'ochrona@msservices.pl';
+                break;
+            case 'Inne':
+                email = 'biuro@msservices.pl';
+                break;
+            default:
+                email = 'zapytanie@msservices.pl';
+        }
+
+        console.log(subject)
+
+        document.querySelector('#recipient').value = email;
+    }
+
+    if (dropDown) {
+        changeFormEmail();
+        dropDown.addEventListener('input', changeFormEmail)
+    }
+
+
+
+    const dropDownEn = document.querySelector('select[name="menu-127"]');
+
+    function changeFormEmailEn() {
+        const subject = dropDownEn.value;
+        let email;
+        switch (subject) {
+            case 'General Issues':
+                email = 'biuro@msservices.pl';
+                break;
+            case 'Ask for an offer':
+                email = 'zapytanie@msservices.pl';
+                break;
+            case 'For suppliers':
+                email = 'office@msservices.pl';
+                break;
+            case 'Employee Issues':
+                email = 'kadry@msservices.pl';
+                break;
+            case 'Recruitment':
+                email = 'hr@msservices.pl';
+                break;
+            case 'GDPR':
+                email = 'ochrona@msservices.pl';
+                break;
+            default:
+                email = 'biuro@msservices.pl';
+        }
+
+        console.log(subject)
+
+        document.querySelector('#recipient').value = email;
+    }
+
+    if (dropDownEn) {
+        changeFormEmailEn();
+        dropDownEn.addEventListener('input', changeFormEmailEn)
+    }
+
 
 
 })()
